@@ -1,0 +1,104 @@
+.card {
+  display: grid;
+  margin-bottom: 56px;
+
+  .card_title {
+    text-align: center;
+    padding: 0px;
+    font-family: PTSerif-Bold;
+    font-size: 24px;
+    color: #3b3d40;
+    letter-spacing: 0;
+    width: 100%;
+  }
+  .card_text {
+    text-align: center;
+    margin: 32px auto 24px;
+    width: 100%;
+  }
+  .card_image {
+    height: 100%;
+    width: 100%;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .card_footer {
+    text-align: center;
+  }
+}
+// Card Large
+.card-lg {
+  width: 100%;
+  height: auto;
+  max-width: 633px;
+
+  .card_title {
+    max-width: 633px;
+    height: 31px;
+    margin: 40px auto 0;
+    overflow: hidden;
+  }
+
+  .card_image {
+    max-height: 633px;
+    height: 633px;
+    max-width: 633px;
+  }
+}
+// Card Medium
+.card-md {
+  height: auto;
+  max-width: 460px;
+
+  & div:nth-child(2) {
+    order: -1;
+  }
+
+  .card_title {
+    height: 62px;
+    margin-bottom: 40px;
+    max-width: 460px;
+  }
+  .card-text {
+    max-width: 460px;
+    min-height: 96px;
+  }
+
+  .card_image {
+    max-height: 460px;
+    height: 460px;
+    max-width: 460px;
+  }
+}
+// Card Small
+.card-sm {
+  width: 100%;
+  height: auto;
+  max-width: 286px;
+
+  & div:nth-child(2) {
+    order: -1;
+  }
+
+  .card_title {
+    max-width: 286px;
+    margin-bottom: 40px;
+    height: 62px;
+    overflow: hidden;
+  }
+
+  .card-text {
+    max-width: 286px;
+    height: 165px;
+  }
+
+  .card_image {
+    max-height: 286px;
+    height: 286px;
+    max-width: 286px;
+  }
+}

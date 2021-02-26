@@ -1,0 +1,24 @@
+.share {
+  display: flex;
+  justify-content: flex-end;
+  .btn_share {
+    width: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 27px;
+    text-transform: uppercase;
+  }
+}
+
+.btn_primary {
+  @include bottom-navigation;
+  color: #fff;
+  text-transform: uppercase;
+  background: #a78f79;
+  border-radius: 4px;
+  padding: 9px 15px;
+  width: fit-content;
+  margin: 16px 0px;
+  cursor: pointer;
+}

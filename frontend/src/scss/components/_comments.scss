@@ -1,0 +1,49 @@
+.comment {
+  display: grid;
+  grid-template-columns: 70px auto;
+  grid-template-areas: "a b";
+  padding: 24px 0px;
+  border-bottom: 1px solid $light-shade;
+
+  &_avatar {
+    grid-area: a;
+    width: 51px;
+    height: 51px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &_body {
+    grid-area: b;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  &_text {
+    @include post-text;
+    margin: 15px 0px 24px;
+  }
+  .detail {
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  &_form {
+    @include bottom-navigation;
+    color: $primary-color;
+    text-anchor: start;
+    width: 100%;
+    opacity: 0.65;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    vertical-align: text-top;
+    padding: 10px;
+    resize: none;
+    margin: 20px auto 0px;
+  }
+}

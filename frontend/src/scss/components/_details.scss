@@ -1,0 +1,48 @@
+// DateLink
+
+.detail {
+  @include date-text;
+  display: flex;
+  width: 286px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+
+// Tags
+
+.tag {
+  @include bottom-navigation;
+  opacity: 0.5;
+  border: 1px solid #b7a698;
+  border-radius: 4px;
+  padding: 3px 9px;
+  width: fit-content;
+  display: inline-block;
+  margin-right: 8px;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  font-size: 10px;
+}
+
+// Ingredients
+
+.recipe_ingredients {
+  border-left: 2px solid #000;
+
+  li {
+    padding: 14px 0px;
+    @include ingredients;
+  }
+
+  li::before {
+    content: "";
+  }
+}
+
+// Share
+
+.btn_share {
+  @include bottom-navigation;
+  align-items: center;
+}

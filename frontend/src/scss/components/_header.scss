@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  height: 119px;
+
+  li:nth-child(2),
+  li:nth-child(3) {
+    order: -1;
+  }
+}
+
+.nav_links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+
+  .nav_link {
+    display: inline-block;
+    margin: auto 30px;
+  }
+}

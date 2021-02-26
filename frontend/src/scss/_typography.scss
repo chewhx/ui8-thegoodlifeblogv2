@@ -1,0 +1,83 @@
+@mixin bottom-navigation {
+  font-family: $font-body-sans;
+  font-weight: $font-medium;
+  font-size: 14px;
+  color: $brown-shade;
+}
+
+@mixin date-text {
+  @include bottom-navigation;
+  color: $lightbrown-shade;
+  line-height: 18px;
+}
+
+@mixin description-text {
+  font-family: $font-body-serif;
+  font-size: 18px;
+  font-weight: $font-regular;
+  color: $secondary-color;
+}
+@mixin description-text-big-box {
+  @include description-text;
+  line-height: 32px;
+}
+
+@mixin ingredients {
+  font-family: $font-body-serif;
+  font-weight: $font-regular;
+  font-size: 20px;
+  color: $secondary-color;
+}
+
+@mixin link-text {
+  font-family: $font-body-serif;
+  font-weight: $font-regular;
+  font-size: 18px;
+  color: $lightbrown-shade;
+  line-height: 40px;
+}
+
+@mixin navigation {
+  font-family: $font-body-sans;
+  font-weight: $font-medium;
+  font-size: 14px;
+  color: $brown-shade;
+  line-height: 20px;
+}
+
+@mixin post-subtitle {
+  font-family: $font-title-serif;
+  font-weight: $font-bold;
+  font-size: 20px;
+  color: $primary-color;
+}
+
+@mixin post-text {
+  font-family: $font-body-serif;
+  font-weight: $font-regular;
+  font-size: 20px;
+  color: $secondary-color;
+}
+
+@mixin post-title {
+  font-family: $font-title-serif;
+  font-weight: $font-bold;
+  font-size: 26px;
+  color: $primary-color;
+}
+
+@mixin shadow {
+  font-family: $font-title-serif;
+  font-weight: $font-regular;
+  font-size: 94px;
+  color: #fff;
+  text-shadow: 5px 0px 10px #fff;
+  //text-shadow: h-shadow v-shadow blur-radius color
+}
+
+@mixin title-text {
+  font-family: $font-title-serif;
+  font-weight: $font-bold;
+  font-size: 24px;
+  color: $primary-color;
+}

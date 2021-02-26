@@ -1,0 +1,18 @@
+@import "./scss/variables";
+@import "./scss/typography";
+@import "./scss/components";
+@import "./scss/pages";
+
+main {
+  min-height: 70vh;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 0 auto;
+}
