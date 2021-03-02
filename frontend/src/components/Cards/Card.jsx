@@ -10,14 +10,6 @@ const Card = ({ size, title, image, description, date, link }) => {
     small: "card-sm",
   };
 
-  console.log(
-    "kebabCase :>> ",
-    _.truncate(
-      "Pre-cooked chicken can be used in this recipe for an even quicker meal. I used pepita seeds, but sunflower seeds or other nuts will also work. Best if served right away.",
-      { length: 50 }
-    )
-  );
-
   return (
     <div className={`card ${sizeClasses[size]}`}>
       <div className="card_image">

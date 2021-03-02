@@ -1,6 +1,6 @@
 import React from "react";
 
-const Comment = ({ name, dateTime, text, avatar }) => {
+const Comment = ({ username, createdAt, comment, avatar }) => {
   return (
     <div className="comment">
       <span className="comment_avatar">
@@ -8,9 +8,9 @@ const Comment = ({ name, dateTime, text, avatar }) => {
       </span>
       <div className="comment_body">
         <div className="detail">
-          {name} • {dateTime}
+          {username} • {createdAt}
         </div>
-        <div className="comment_text">{text}</div>
+        <div className="comment_text">{comment}</div>
         <div className="detail">REPLY • SHARE</div>
       </div>
     </div>

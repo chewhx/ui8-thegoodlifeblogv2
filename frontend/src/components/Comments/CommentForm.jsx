@@ -1,15 +1,9 @@
 import React, { useState } from "react";
 import { Button } from "../Buttons";
 
-const CommentForm = () => {
+const CommentForm = ({ post }) => {
   const [input, setInput] = useState();
   const [name, setName] = useState();
-
-  const sumbitHandler = () => {
-    console.log("Submit");
-    setInput("");
-    setName("");
-  };
 
   return (
     <form>
@@ -28,7 +22,9 @@ const CommentForm = () => {
         placeholder="Enter your comment..."
         onChange={(e) => setInput(e.target.value)}
       />
-      <Button onClick={() => sumbitHandler()}>Leave a comment</Button>
+      <Button onClick={() => post({ comment: input, username: name })}>
+        Leave a comment
+      </Button>
     </form>
   );
 };
